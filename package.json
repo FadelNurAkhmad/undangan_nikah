@@ -7,6 +7,8 @@
     "stylelint-config-recommended": "^14.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint:js": "eslint js",
     "lint:css": "stylelint css",
     "lint:html": "htmlhint **/*.html"
